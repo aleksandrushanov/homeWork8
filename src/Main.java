@@ -7,12 +7,22 @@ public class Main {
         number[1] = 2;
         number[2] = 3;
         for (int i = 0; i < 3; i++) {
-            System.out.print(number[2]);
+            if (i!=2){
+                System.out.print(number[i]+" ,");
+            }else {
+                System.out.print(number[i]);
+            }
         }
         System.out.println("\n");
 
         double[] fractional ={1.57, 7.654, 9.986};
-        System.out.println(fractional[2]);
+        for (int a = 0 ;a < fractional.length; a++) {
+            if (a < fractional.length - 1){
+                System.out.print(fractional[a] + ", ");
+            }else {
+                System.out.print(fractional[a]);
+            }
+        }
 
         System.out.println("\n");
         int [] age = new int[4];
@@ -20,7 +30,14 @@ public class Main {
         age[1]=16;
         age[2]=17;
         age[3]=18;
-        System.out.println(age[2]);
+        for (int i = 0; i < age.length; i++) {
+            if (i < age.length - 1){
+                System.out.print(age[i] +", ");
+            }else {
+                System.out.print(age[i]);
+            }
+            
+        }
 
 
     }
